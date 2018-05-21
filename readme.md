@@ -4,10 +4,14 @@ V. 0.1
 © P.Serrano-Alvarado, E. Desmontils, Université de Nantes, mai 2018
 
 #Positionnement de l’environnement (Jena, Joda-time…)+ nécessite Ant
+```bash
 source RML-Closer-env.sh
+```
 
 #Pour compiler
+```bash
 ant
+```
 
 #Combining two semantic files
 ```bash
