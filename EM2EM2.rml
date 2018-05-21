@@ -1,0 +1,2428 @@
++++++++++++++++++++ to add +++++++++++++++++++++++
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://desmontils.net/ns/sw/em#Water> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#EspaceMaritime> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://desmontils.net/ns/sw/em#Water> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#EspaceMaritime> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://www.w3.org/ns/r2rml#predicate>
+          <http://desmontils.net/ns/sw/em#waterLink> ] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://desmontils.net/ns/sw/em#Water> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#EspaceMaritime> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://desmontils.net/ns/sw/em#Water> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#EspaceMaritime> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://desmontils.net/ns/sw/em#Water> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Fleuve> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://desmontils.net/ns/sw/em#Water> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Fleuve> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://www.w3.org/ns/r2rml#predicate>
+          <http://desmontils.net/ns/sw/em#waterLink> ] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://desmontils.net/ns/sw/em#Water> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#EspaceMaritime> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://desmontils.net/ns/sw/em#Water> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Fleuve> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://desmontils.net/ns/sw/em#Water> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#EspaceMaritime> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://desmontils.net/ns/sw/em#Water> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#EspaceMaritime> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://desmontils.net/ns/sw/em#Water> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#EspaceMaritime> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://desmontils.net/ns/sw/em#Water> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#EspaceMaritime> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://desmontils.net/ns/sw/em#Water> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Fleuve> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://desmontils.net/ns/sw/em#Water> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#EspaceMaritime> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://www.w3.org/ns/r2rml#class>
+          <http://desmontils.net/ns/sw/em#Liquid> , <http://desmontils.net/ns/sw/em#Water> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://www.w3.org/ns/r2rml#predicate>
+          <http://desmontils.net/ns/sw/em#waterLink> ] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://desmontils.net/ns/sw/em#Water> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Fleuve> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://desmontils.net/ns/sw/em#Water> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#EspaceMaritime> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://desmontils.net/ns/sw/em#Water> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Fleuve> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://www.w3.org/ns/r2rml#class>
+          <http://desmontils.net/ns/sw/em#Pays> , <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://desmontils.net/ns/sw/em#Water> , <http://www.w3.org/2002/07/owl#Thing> ] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://desmontils.net/ns/sw/em#Water> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#EspaceMaritime> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b0 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://desmontils.net/ns/sw/em#Liquid> , <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Water> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{fleuve/@id-f}"
+          ]
+] .
+
+[ <http://www.w3.org/ns/r2rml#class>
+          <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> , <http://desmontils.net/ns/sw/em#Liquid> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b2 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2002/07/owl#Thing> , <http://www.w3.org/2000/01/rdf-schema#Resource> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{@se-jette}"
+          ]
+] .
+
+[ <http://semweb.mmlab.be/ns/rml#logicalSource>
+          _:b1 ;
+  <http://www.w3.org/ns/r2rml#subjectMap>
+          [ <http://www.w3.org/ns/r2rml#class>
+                    <http://www.w3.org/2000/01/rdf-schema#Resource> , <http://www.w3.org/2002/07/owl#Thing> ;
+            <http://www.w3.org/ns/r2rml#template>
+                    "http://www.example.org/country/{cotoie/@id-p}"
+          ]
+] .
+
+<http://www.desmontils.net/me#cpt>
+        <http://www.desmontils.net/me#val>
+                "36"^^<http://www.w3.org/2001/XMLSchema#int> , "26"^^<http://www.w3.org/2001/XMLSchema#int> , "38"^^<http://www.w3.org/2001/XMLSchema#int> , "3"^^<http://www.w3.org/2001/XMLSchema#int> , "5"^^<http://www.w3.org/2001/XMLSchema#int> , "31"^^<http://www.w3.org/2001/XMLSchema#int> , "43"^^<http://www.w3.org/2001/XMLSchema#int> , "33"^^<http://www.w3.org/2001/XMLSchema#int> , "45"^^<http://www.w3.org/2001/XMLSchema#int> , "51"^^<http://www.w3.org/2001/XMLSchema#int> , "8"^^<http://www.w3.org/2001/XMLSchema#int> , "53"^^<http://www.w3.org/2001/XMLSchema#int> , "10"^^<http://www.w3.org/2001/XMLSchema#int> , "18"^^<http://www.w3.org/2001/XMLSchema#int> , "48"^^<http://www.w3.org/2001/XMLSchema#int> , "56"^^<http://www.w3.org/2001/XMLSchema#int> , "58"^^<http://www.w3.org/2001/XMLSchema#int> , "15"^^<http://www.w3.org/2001/XMLSchema#int> , "23"^^<http://www.w3.org/2001/XMLSchema#int> , "35"^^<http://www.w3.org/2001/XMLSchema#int> , "25"^^<http://www.w3.org/2001/XMLSchema#int> , "37"^^<http://www.w3.org/2001/XMLSchema#int> , 0 , "2"^^<http://www.w3.org/2001/XMLSchema#int> , "28"^^<http://www.w3.org/2001/XMLSchema#int> , "40"^^<http://www.w3.org/2001/XMLSchema#int> , "30"^^<http://www.w3.org/2001/XMLSchema#int> , "42"^^<http://www.w3.org/2001/XMLSchema#int> , "50"^^<http://www.w3.org/2001/XMLSchema#int> , "7"^^<http://www.w3.org/2001/XMLSchema#int> , "9"^^<http://www.w3.org/2001/XMLSchema#int> , "17"^^<http://www.w3.org/2001/XMLSchema#int> , "47"^^<http://www.w3.org/2001/XMLSchema#int> , "49"^^<http://www.w3.org/2001/XMLSchema#int> , "55"^^<http://www.w3.org/2001/XMLSchema#int> , "12"^^<http://www.w3.org/2001/XMLSchema#int> , "57"^^<http://www.w3.org/2001/XMLSchema#int> , "14"^^<http://www.w3.org/2001/XMLSchema#int> , "20"^^<http://www.w3.org/2001/XMLSchema#int> , "22"^^<http://www.w3.org/2001/XMLSchema#int> , "34"^^<http://www.w3.org/2001/XMLSchema#int> , "1"^^<http://www.w3.org/2001/XMLSchema#int> , "27"^^<http://www.w3.org/2001/XMLSchema#int> , "39"^^<http://www.w3.org/2001/XMLSchema#int> , "29"^^<http://www.w3.org/2001/XMLSchema#int> , "41"^^<http://www.w3.org/2001/XMLSchema#int> , "4"^^<http://www.w3.org/2001/XMLSchema#int> , "6"^^<http://www.w3.org/2001/XMLSchema#int> , "32"^^<http://www.w3.org/2001/XMLSchema#int> , "44"^^<http://www.w3.org/2001/XMLSchema#int> , "46"^^<http://www.w3.org/2001/XMLSchema#int> , "52"^^<http://www.w3.org/2001/XMLSchema#int> , "54"^^<http://www.w3.org/2001/XMLSchema#int> , "11"^^<http://www.w3.org/2001/XMLSchema#int> , "13"^^<http://www.w3.org/2001/XMLSchema#int> , "19"^^<http://www.w3.org/2001/XMLSchema#int> , "21"^^<http://www.w3.org/2001/XMLSchema#int> , "16"^^<http://www.w3.org/2001/XMLSchema#int> , "24"^^<http://www.w3.org/2001/XMLSchema#int> .
+@prefix rr:    <http://www.w3.org/ns/r2rml#> .
+@prefix rml:   <http://semweb.mmlab.be/ns/rml#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix em:    <http://desmontils.net/ns/sw/em#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ql:    <http://semweb.mmlab.be/ns/ql#> .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+<file:///Users/desmontils-e/Programmation/RML-Closer/EM2EM.rml#country>
+        rml:logicalSource      _:b1 ;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "@nbhab" ;
+                                                 rr:datatype    xsd:number
+                                               ] ;
+                                 rr:predicate  em:nbHab
+                               ] ;
+        rr:predicateObjectMap  [ rr:objectMap  [ rr:template  "http://www.example.org/country/{fleuve/@id-f}" ] ;
+                                 rr:predicate  em:waterLink , em:estSource
+                               ] ;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "@superficie" ;
+                                                 rr:datatype    xsd:number
+                                               ] ;
+                                 rr:predicate  em:superficie
+                               ] ;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "@nom-p" ;
+                                                 rr:datatype    xsd:string
+                                               ] ;
+                                 rr:predicate  em:nom-p
+                               ] ;
+        rr:subjectMap          [ rr:class     owl:Thing , rdfs:Resource , em:Pays ;
+                                 rr:template  "http://www.example.org/country/{@id-p}"
+                               ] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , em:Liquid , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:EspaceMaritime , owl:Thing , em:Water , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+<file:///Users/desmontils-e/Programmation/RML-Closer/EM2EM.rml#river>
+        rml:logicalSource      _:b0 ;
+        rr:predicateObjectMap  [ rr:objectMap  [ rr:joinCondition     [ rr:child   "parcourt/@id-pays" ;
+                                                                        rr:parent  "@id-p"
+                                                                      ] ;
+                                                 rr:parentTriplesMap  <file:///Users/desmontils-e/Programmation/RML-Closer/EM2EM.rml#country>
+                                               ] ;
+                                 rr:predicate  em:parcourt3
+                               ] ;
+        rr:predicateObjectMap  [ rr:objectMap  [ rr:parentTriplesMap  <file:///Users/desmontils-e/Programmation/RML-Closer/EM2EM.rml#parcourt2> ] ;
+                                 rr:predicate  em:parcourt2
+                               ] ;
+        rr:predicateObjectMap  [ rr:objectMap  [ rr:template  "http://www.example.org/country/{parcourt/@id-pays}" ] ;
+                                 rr:predicate  em:parcourt
+                               ] ;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "@nom-f" ;
+                                                 rr:datatype    xsd:string
+                                               ] ;
+                                 rr:predicate  em:nom-f
+                               ] ;
+        rr:predicateObjectMap  [ rr:objectMap  [ rr:template  "http://www.example.org/country/{@se-jette}" ] ;
+                                 rr:predicate  em:waterLink , em:seJette
+                               ] ;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "@longueur" ;
+                                                 rr:datatype    xsd:number
+                                               ] ;
+                                 rr:predicate  em:longueur
+                               ] ;
+        rr:subjectMap          [ rr:class     owl:Thing , rdfs:Resource , em:Water , em:Liquid , em:Fleuve ;
+                                 rr:template  "http://www.example.org/river/{@id-f}"
+                               ] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Fleuve , owl:Thing , em:Water , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+<http://www.desmontils.net/me#cpt>
+        <http://www.desmontils.net/me#val>
+                "36"^^xsd:int , "26"^^xsd:int , "38"^^xsd:int , "3"^^xsd:int , "5"^^xsd:int , "31"^^xsd:int , "43"^^xsd:int , "33"^^xsd:int , "45"^^xsd:int , "8"^^xsd:int , "51"^^xsd:int , "10"^^xsd:int , "53"^^xsd:int , "18"^^xsd:int , "48"^^xsd:int , "56"^^xsd:int , "15"^^xsd:int , "58"^^xsd:int , "23"^^xsd:int , "35"^^xsd:int , "25"^^xsd:int , "37"^^xsd:int , 0 , "2"^^xsd:int , "28"^^xsd:int , "40"^^xsd:int , "30"^^xsd:int , "42"^^xsd:int , "7"^^xsd:int , "50"^^xsd:int , "9"^^xsd:int , "17"^^xsd:int , "47"^^xsd:int , "49"^^xsd:int , "12"^^xsd:int , "55"^^xsd:int , "14"^^xsd:int , "57"^^xsd:int , "20"^^xsd:int , "22"^^xsd:int , "34"^^xsd:int , "1"^^xsd:int , "27"^^xsd:int , "39"^^xsd:int , "29"^^xsd:int , "41"^^xsd:int , "4"^^xsd:int , "6"^^xsd:int , "32"^^xsd:int , "44"^^xsd:int , "46"^^xsd:int , "52"^^xsd:int , "11"^^xsd:int , "54"^^xsd:int , "13"^^xsd:int , "19"^^xsd:int , "21"^^xsd:int , "16"^^xsd:int , "24"^^xsd:int .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Fleuve , owl:Thing , rdfs:Resource , em:Water , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:EspaceMaritime , owl:Thing , em:Water , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:EspaceMaritime , owl:Thing , em:Water , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:EspaceMaritime , owl:Thing , em:Water , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Fleuve , owl:Thing , rdfs:Resource , em:Water , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , em:Liquid , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Fleuve , owl:Thing , rdfs:Resource , em:Water , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Fleuve , owl:Thing , rdfs:Resource , em:Water , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:EspaceMaritime , owl:Thing , em:Water , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:EspaceMaritime , owl:Thing , em:Water , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , em:Liquid , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+_:b2    rml:iterator              "/em/liste-espace-maritime/espace-maritime" ;
+        rml:referenceFormulation  ql:XPath ;
+        rml:source                "em.xml" .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Fleuve , owl:Thing , rdfs:Resource , em:Water , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:EspaceMaritime , owl:Thing , em:Water , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:EspaceMaritime , owl:Thing , em:Water , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+_:b0    rml:iterator              "/em/liste-pays/pays/fleuve" ;
+        rml:referenceFormulation  ql:XPath ;
+        rml:source                "em.xml" .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:EspaceMaritime , owl:Thing , em:Water , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+<file:///Users/desmontils-e/Programmation/RML-Closer/EM2EM.rml#sea>
+        rml:logicalSource      _:b2 ;
+        rr:predicateObjectMap  [ rr:objectMap  [ rr:template  "http://www.example.org/country/{cotoie/@id-p}" ] ;
+                                 rr:predicate  em:waterLink , em:cotoie
+                               ] ;
+        rr:predicateObjectMap  [ rr:objectMap  [ rml:reference  "@nom-e" ;
+                                                 rr:datatype    xsd:string
+                                               ] ;
+                                 rr:predicate  em:nom-em
+                               ] ;
+        rr:subjectMap          [ rr:class     owl:Thing , em:Water , rdfs:Resource , em:Liquid , em:Pays , em:EspaceMaritime ;
+                                 rr:template  "http://www.example.org/sea/{@id-e}"
+                               ] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:EspaceMaritime , owl:Thing , em:Water , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , em:Liquid , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+<file:///Users/desmontils-e/Programmation/RML-Closer/EM2EM.rml#parcourt2>
+        rml:logicalSource  [ rml:iterator              "/em/liste-pays/pays/fleuve/parcourt" ;
+                             rml:referenceFormulation  ql:XPath ;
+                             rml:source                "em.xml"
+                           ] ;
+        rr:subjectMap      [ rr:template  "http://www.example.org/country/{@id-pays}" ] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:EspaceMaritime , owl:Thing , em:Water , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     rdfs:Resource , owl:Thing ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+_:b1    rml:iterator              "/em/liste-pays/pays" ;
+        rml:referenceFormulation  ql:XPath ;
+        rml:source                "em.xml" .
+
+[ rml:logicalSource  _:b2 ;
+  rr:subjectMap      [ rr:class     em:EspaceMaritime , owl:Thing , em:Water , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{cotoie/@id-p}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b0 ;
+  rr:subjectMap      [ rr:class     em:Water , owl:Thing , rdfs:Resource , em:Liquid ;
+                       rr:template  "http://www.example.org/country/{@se-jette}"
+                     ]
+] .
+
+[ rml:logicalSource  _:b1 ;
+  rr:subjectMap      [ rr:class     em:Liquid , owl:Thing , rdfs:Resource ;
+                       rr:template  "http://www.example.org/country/{fleuve/@id-f}"
+                     ]
+] .

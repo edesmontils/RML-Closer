@@ -1,0 +1,177 @@
+
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix em: <http://desmontils.net/ns/sw/em#> .
+
+<#river> 
+	rml:logicalSource [
+		rml:source "em.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "/em/liste-pays/pays/fleuve"
+	] ;
+ 
+	rr:subjectMap [
+		rr:template "http://www.example.org/river/{@id-f}" ;
+		rr:class em:Fleuve
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate em:longueur ;
+		rr:objectMap [
+			rml:reference "@longueur"; 
+			rr:datatype xsd:number
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate em:seJette ;
+		rr:objectMap [
+			rr:template "http://www.example.org/country/{@se-jette}" 
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate em:nom-f ;
+		rr:objectMap [
+			rml:reference "@nom-f"; 
+			rr:datatype xsd:string
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate em:parcourt ;
+		rr:objectMap [
+			rr:template "http://www.example.org/country/{parcourt/@id-pays}" 
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate em:parcourt2 ;
+		rr:objectMap [
+			rr:parentTriplesMap <#parcourt2>
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate em:parcourt3 ;
+		rr:objectMap [
+			rr:parentTriplesMap <#country> ;
+			rr:joinCondition [
+ 				rr:child "parcourt/@id-pays";
+	      		rr:parent "@id-p"
+     		]
+		]
+	] 
+
+	.
+
+<#parcourt2> 
+	rml:logicalSource [
+		rml:source "em.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "/em/liste-pays/pays/fleuve/parcourt"
+	] ;
+
+	rr:subjectMap [
+		#rr:termType rr:BlankNode
+		rr:template "http://www.example.org/country/{@id-pays}"
+	] ;
+
+#	rr:predicateObjectMap [
+#		rr:predicate em:lieu ;
+#		rr:objectMap [
+#			rr:template "http://www.example.org/country/{@id-pays}"
+#		]
+#	] ;	
+#
+#	rr:predicateObjectMap [
+#		rr:predicate em:distance ;
+#		rr:objectMap [
+#			rml:reference "@distance"; 
+#			# rr:datatype xsd:number
+#		]
+#	] 
+
+	.
+
+
+<#sea> 
+	rml:logicalSource [
+		rml:source "em.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "/em/liste-espace-maritime/espace-maritime"
+	] ;
+
+	rr:subjectMap [
+		rr:template "http://www.example.org/sea/{@id-e}" ;
+		rr:class em:EspaceMaritime
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate em:nom-em ;
+		rr:objectMap [
+			rml:reference "@nom-e"; 
+			rr:datatype xsd:string
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate em:cotoie ;
+		rr:objectMap [
+			rr:template "http://www.example.org/country/{cotoie/@id-p}" 
+		]
+	] 
+
+	.
+
+<#country>
+	rml:logicalSource [
+		rml:source "em.xml" ;
+		rml:referenceFormulation ql:XPath ;
+		rml:iterator "/em/liste-pays/pays"
+	] ;
+
+	rr:subjectMap [
+		rr:template "http://www.example.org/country/{@id-p}" ;
+		rr:class em:Pays
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate em:nom-p ;
+		rr:objectMap [
+			rml:reference "@nom-p"; 
+			rr:datatype xsd:string
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate em:superficie ;
+		rr:objectMap [
+			rml:reference "@superficie"; 
+			rr:datatype xsd:number
+		]
+	] ;
+
+		rr:predicateObjectMap [
+		rr:predicate em:estSource ;
+		rr:objectMap [
+			rr:template "http://www.example.org/country/{fleuve/@id-f}" 
+		]
+	] ;
+
+	rr:predicateObjectMap [
+		rr:predicate em:nbHab ;
+		rr:objectMap [
+			rml:reference "@nbhab";
+			rr:datatype xsd:number
+
+		]
+	]
+
+	.

@@ -1,0 +1,174 @@
+@prefix : <http://www.semanticweb.org/owl/owlapi/turtle#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+@base <http://desmontils.net/ns/sw/em#> .
+@prefix em: <http://desmontils.net/ns/sw/em#> .
+
+<http://desmontils.net/ns/sw/em#> rdf:type owl:Ontology ;                                        
+                                  rdfs:label "Espaces maritimes" ;                                       
+                                  owl:versionInfo "1.0" ;                                        
+                                  rdfs:comment "Exemple d'ontologie sur l'exercice des espaces maritimes"@fr .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+em:TypeValue rdf:type owl:Class .
+em:Ocean rdf:type em:TypeValue ; rdfs:label "Océan" .
+em:Mer rdf:type em:TypeValue ; rdfs:label "Mer" .
+em:TypeValue owl:oneOf (em:Ocean em:Mer) .
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+em:Water a owl:Class ; rdfs:subClassOf em:Liquid.
+
+em:Liquid a owl:Class .
+
+################# Espace Maritime ##################
+
+###  http://desmontils.net/ns/sw/em#EspaceMaritime
+
+em:EspaceMaritime rdf:type owl:Class ;
+                  rdfs:subClassOf em:Water ;
+                  rdfs:label "Espace Maritime" .
+
+###  http://desmontils.net/ns/sw/em#Type
+
+em:type rdf:type owl:ObjectProperty ;        
+        rdfs:label "Type" ;        
+        rdfs:domain em:EspaceMaritime ;        
+        rdfs:range em:TypeValue .
+
+###  http://desmontils.net/ns/sw/em#Nom-e
+
+em:nom-e rdf:type owl:DatatypeProperty ;         
+         rdfs:label "Nom-e" ;         
+         rdfs:domain em:EspaceMaritime ;         
+         rdfs:range xsd:string .
+
+################# Fleuve ##################
+
+###  http://desmontils.net/ns/sw/em#Fleuve
+
+em:Fleuve rdf:type owl:Class ;
+          rdfs:subClassOf em:Water ;
+          rdfs:label "Fleuve" .
+
+###  http://desmontils.net/ns/sw/em#Nom-f
+
+em:nom-f rdf:type owl:DatatypeProperty ;         
+         rdfs:label "Nom-f" ;         
+         rdfs:domain em:Fleuve ;         
+         rdfs:range xsd:string .
+
+###  http://desmontils.net/ns/sw/em#Longueur
+
+em:longueur rdf:type owl:DatatypeProperty ;            
+            rdfs:label "Longueur" ;            
+            rdfs:domain em:Fleuve ;
+            rdfs:range xsd:decimal .
+
+
+################# Pays ##################
+
+###  http://desmontils.net/ns/sw/em#Pays
+
+em:Pays rdf:type owl:Class ;
+        rdfs:subClassOf owl:Thing ;
+        rdfs:label "Pays" .
+
+###  http://desmontils.net/ns/sw/em#Nom-p
+
+em:nom-p rdf:type owl:DatatypeProperty ;         
+         rdfs:label "Nom-p" ;         
+         rdfs:domain em:Pays ;         
+         rdfs:range xsd:string .
+
+###  http://desmontils.net/ns/sw/em#Superficie
+
+em:superficie rdf:type owl:DatatypeProperty ;              
+              rdfs:label "Superficie" ;              
+              rdfs:domain em:Pays ;              
+              rdfs:range xsd:decimal .
+
+###  http://desmontils.net/ns/sw/em#NbHab
+
+em:nbHab rdf:type owl:DatatypeProperty ;         
+         rdfs:label "Nb Hab" ;         
+         rdfs:domain em:Pays ;         
+         rdfs:range xsd:decimal .
+
+
+################# Pays ##################
+
+###  http://desmontils.net/ns/sw/em#Parcourt
+
+#em:Parcourt rdf:type owl:ObjectProperty ;            
+#            rdfs:label "Parcourt" ;            
+#            rdfs:domain em:Fleuve ;           
+#            rdfs:range em:Pays .
+
+em:Parcourt rdf:type owl:Class ;
+        rdfs:subClassOf owl:Thing ;
+        rdfs:label "Parcourt" .
+
+em:distance rdf:type owl:DatatypeProperty ;         
+         rdfs:label "Distance" ;         
+         rdfs:domain em:Parcourt ;         
+         rdfs:range xsd:decimal .
+        
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+em:qui rdf:type owl:ObjectProperty ;          
+          rdfs:label "qui" ;          
+          rdfs:range em:Fleuve ;          
+          rdfs:domain em:Parcourt .
+          
+em:où rdf:type owl:ObjectProperty ;          
+          rdfs:label "où" ;          
+          rdfs:range em:Pays ;          
+          rdfs:domain em:Parcourt .
+
+
+###  http://desmontils.net/ns/sw/em#Cotoie
+
+em:cotoie rdf:type owl:ObjectProperty ;          
+          rdfs:label "Côtoie" ;          
+          rdfs:range em:EspaceMaritime ;          
+          rdfs:domain em:Pays .
+
+
+###  http://desmontils.net/ns/sw/em#EstSource
+
+em:estSource rdf:type owl:ObjectProperty ;             
+             rdfs:label "Est Source" ;             
+             rdfs:range em:Fleuve ;             
+             rdfs:domain em:Pays .
+
+###  http://desmontils.net/ns/sw/em#SeJette
+
+em:seJette rdf:type owl:ObjectProperty ;           
+           rdfs:label "Se Jette" ;           
+           rdfs:range em:EspaceMaritime ;           
+           rdfs:domain em:Fleuve .

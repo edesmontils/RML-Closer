@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+
+<project name="RML Closer" default="dist" basedir=".">
+	<description> Build script for Privacy-lookout project </description>
+
+
+	<property name="build" location="build"/>
+	<property name="src" location="src"/>
+	<property name="dist" location="dist"/>
+	<property name="lib" location="lib"/>
+
+	<path id="class.path">
+		<fileset dir="${lib}">
+			<!-- Include (almost) all jars from the distribution on the class path -->
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+
+	<target name="init">
+		<pathconvert targetos="unix" property="classpath" refid="class.path"/>
+		<mkdir dir="${build}"/>
+	</target>
+
+	<target name="clean">
+		<delete dir="${build}"/>
+		<delete file="${jar}"/>
+	</target>
+
+	<target name="compile" depends="init">
+		<javac source="1.6" target="1.6" srcdir="${src}" destdir="${build}" debug="yes"
+			deprecation="no" includeantruntime="false">
+			<classpath refid="class.path"/>
+		</javac>
+	</target>
+
+	<target name="dist" depends="compile">
+		<jar jarfile="RML-Closer.jar" >
+			<fileset dir="${build}"/>
+			<!--fileset dir="${lib}" /-->
+		</jar>
+	</target>
+
+	<target name="run">
+		<echo message="Step"/>
+		<java classname="Step" fork="true" failonerror="true">
+			<classpath>
+				<path refid="class.path"/>
+				<fileset dir=".">
+					<include name="*.jar"/>
+				</fileset>
+			</classpath>
+		</java>
+
+	</target>
+</project>

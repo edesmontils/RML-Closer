@@ -1,0 +1,163 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+@prefix em: <http://desmontils.net/ns/sw/em#> .
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+ 
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+em:TypeValue rdf:type rdfs:Class .
+em:Ocean rdf:type em:TypeValue ; rdfs:label "Océan" .
+em:Mer rdf:type em:TypeValue ; rdfs:label "Mer" .
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+em:Water a rdfs:Class ; rdfs:subClassOf em:Liquid.
+
+em:Liquid a rdfs:Class .
+
+################# Espace Maritime ##################
+
+###  http://desmontils.net/ns/sw/em#EspaceMaritime
+
+em:EspaceMaritime rdf:type rdfs:Class ; rdfs:subClassOf em:Water ;
+                  rdfs:label "Espace Maritime" .
+
+###  http://desmontils.net/ns/sw/em#Type
+
+em:type rdf:type rdf:Property ;        
+        rdfs:label "Type" ;        
+        rdfs:domain em:EspaceMaritime ;        
+        rdfs:range em:TypeValue .
+
+###  http://desmontils.net/ns/sw/em#Nom-e
+
+em:nom-e rdf:type rdf:Property ;         
+         rdfs:label "Nom-e" ;         
+         rdfs:domain em:EspaceMaritime ;         
+         rdfs:range xsd:string .
+
+################# Fleuve ##################
+
+###  http://desmontils.net/ns/sw/em#Fleuve
+
+em:Fleuve rdf:type rdfs:Class ; rdfs:subClassOf em:Water ;
+          rdfs:label "Fleuve" .
+
+###  http://desmontils.net/ns/sw/em#Nom-f
+
+em:nom-f rdf:type rdf:Property ;         
+         rdfs:label "Nom-f" ;         
+         rdfs:domain em:Fleuve ;         
+         rdfs:range xsd:string .
+
+###  http://desmontils.net/ns/sw/em#Longueur
+
+em:longueur rdf:type rdf:Property ;            
+            rdfs:label "Longueur" ;            
+            rdfs:domain em:Fleuve ;
+            rdfs:range xsd:decimal .
+
+
+################# Pays ##################
+
+###  http://desmontils.net/ns/sw/em#Pays
+
+em:Pays rdf:type rdfs:Class ;
+        rdfs:label "Pays" .
+
+###  http://desmontils.net/ns/sw/em#Nom-p
+
+em:nom-p rdf:type rdf:Property ;         
+         rdfs:label "Nom-p" ;         
+         rdfs:domain em:Pays ;         
+         rdfs:range xsd:string .
+
+###  http://desmontils.net/ns/sw/em#Superficie
+
+em:superficie rdf:type rdf:Property ;              
+              rdfs:label "Superficie" ;              
+              rdfs:domain em:Pays ;              
+              rdfs:range xsd:decimal .
+
+###  http://desmontils.net/ns/sw/em#NbHab
+
+em:nbHab rdf:type rdf:Property ;         
+         rdfs:label "Nb Hab" ;         
+         rdfs:domain em:Pays ;         
+         rdfs:range xsd:decimal .
+
+
+################# Pays ##################
+
+###  http://desmontils.net/ns/sw/em#Parcourt
+
+#em:Parcourt rdf:type rdf:Property ;            
+#            rdfs:label "Parcourt" ;            
+#            rdfs:domain em:Fleuve ;           
+#            rdfs:range em:Pays .
+
+em:Parcourt rdf:type rdfs:Class ;
+        rdfs:label "Parcourt" .
+
+em:distance rdf:type rdf:Property ;         
+         rdfs:label "Distance" ;         
+         rdfs:domain em:Parcourt ;         
+         rdfs:range xsd:decimal .
+        
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+em:waterLink a rdf:Property ;
+  rdfs:range em:Water .
+
+em:qui rdf:type rdf:Property ; rdfs:subPropertyOf em:waterLink ;        
+          rdfs:label "qui" ;          
+          rdfs:range em:Fleuve ;          
+          rdfs:domain em:Parcourt .
+          
+em:où rdf:type rdf:Property ;          
+          rdfs:label "où" ;          
+          rdfs:range em:Pays ;          
+          rdfs:domain em:Parcourt .
+
+
+###  http://desmontils.net/ns/sw/em#Cotoie
+
+em:cotoie rdf:type rdf:Property ; rdfs:subPropertyOf em:waterLink ;
+          rdfs:label "Côtoie" ;          
+          rdfs:range em:EspaceMaritime ;          
+          rdfs:domain em:Pays .
+
+
+###  http://desmontils.net/ns/sw/em#EstSource
+
+em:estSource rdf:type rdf:Property ; rdfs:subPropertyOf em:waterLink ;
+             rdfs:label "Est Source" ;             
+             rdfs:range em:Fleuve ;             
+             rdfs:domain em:Pays .
+
+###  http://desmontils.net/ns/sw/em#SeJette
+
+em:seJette rdf:type rdf:Property ; rdfs:subPropertyOf em:waterLink ;
+           rdfs:label "Se Jette" ;           
+           rdfs:range em:EspaceMaritime ;           
+           rdfs:domain em:Fleuve .
