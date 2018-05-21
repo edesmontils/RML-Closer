@@ -1,10 +1,7 @@
 export LIB_PL=./lib
 export LIB_JENA=$LIB_PL
-#/Users/desmontils-e/Applications/jena/apache-jena-3.1.0/lib
 
 #export LOGGING=log4j.properties
-
-
 
 #export CLASSPATH=.:$CLASSPATH
 
