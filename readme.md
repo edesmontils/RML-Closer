@@ -25,6 +25,6 @@ java -cp $CLASSPATH:RML-Closer.jar Apply em.n3 EM2EM.rml rf
 - Help -
 Apply OntoFile RMLFile mode
 mode = xy : 
-x : d(l),l(ite),o(wl),r(dfs)
-y : n(o), r(dfs), f(ull), t(rans), and only for 'o' type m(icro), (m)i(ni)
+- x = Ontology type : d(l),l(ite),o(wl),r(dfs)
+- y = Jena rule mode : n(o), r(dfs), f(ull), t(rans), and only for 'o' type m(icro), (m)i(ni)
 ```
