@@ -27,6 +27,7 @@ riot --out N3 file1.ttl file2.ttl > file.ttl
 ```bash
 java -cp $CLASSPATH:RML-Closer.jar Apply em.n3 EM2EM.rml rf
 ```
+
 ```
 - Help -
 Apply OntoFile RMLFile mode
