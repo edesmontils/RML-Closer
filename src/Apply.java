@@ -158,11 +158,14 @@ public class Apply extends Step {
 		// owlmodesl.write(System.out,"N3");
 
 	    InfModel inferredModel = processRulesF(rulesFile,owlmodel);
+	    // inferredModel.write(System.out,"N3");
 	    Model newStms = inferredModel.getDeductionsModel();
 
 	    owlmodel = ModelFactory.createOntologyModel(oms, ModelFactory.createDefaultModel()) ;
 	    owlmodel.add(onto);
 	    owlmodel.add(rml);
+
+	    
 
 	    Model suppressStms = owlmodel.difference(inferredModel);  
 
