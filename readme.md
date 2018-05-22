@@ -3,17 +3,17 @@
 V. 0.1
 © P.Serrano-Alvarado, E. Desmontils, Université de Nantes, mai 2018
 
-# Positionnement de l’environnement (Jena, Joda-time…)+ nécessite Ant
+## Positionnement de l’environnement (Jena, Joda-time…)+ nécessite Ant
 ```bash
 source RML-Closer-env.sh
 ```
 
-# Pour compiler
+## Pour compiler
 ```bash
 ant
 ```
 
-# Combining two semantic files
+## Combining two semantic files
 ```bash
 java -cp $CLASSPATH:RML-Closer.jar Fus file1.ttl file2.ttl
 ```
@@ -22,7 +22,7 @@ or
 riot --out N3 file1.ttl file2.ttl > file.ttl
 ```
 
-# RML process
+## RML process
 
 ```bash
 java -cp $CLASSPATH:RML-Closer.jar Apply em.n3 EM2EM.rml rf
