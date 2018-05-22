@@ -9,6 +9,7 @@ import org.apache.jena.atlas.logging.*;
 import org.apache.jena.ontology.*;
 import org.apache.jena.query.*;
 import org.apache.jena.datatypes.* ;
+
 import org.apache.jena.reasoner.*;
 import org.apache.jena.reasoner.rulesys.*;
 import org.apache.jena.vocabulary.*;
@@ -148,6 +149,14 @@ public class Apply extends Step {
 	    owlmodel.add(onto);
 		owlmodel.add(rml);
 
+		Statement new_tripple = owlmodel.createStatement(
+		    	                             owlmodel.createResource(ns.concat("cpt")),
+		    	                             owlmodel.createProperty(ns.concat("val")),
+		    	                             owlmodel.createTypedLiteral(new Integer(0))  ) ;
+		owlmodel.add(new_tripple);
+
+		// owlmodesl.write(System.out,"N3");
+
 	    InfModel inferredModel = processRulesF(rulesFile,owlmodel);
 	    Model newStms = inferredModel.getDeductionsModel();
 
@@ -157,8 +166,8 @@ public class Apply extends Step {
 
 	    Model suppressStms = owlmodel.difference(inferredModel);  
 
-	    System.out.println("+++++++++++++++++++ to add +++++++++++++++++++++++");
-	    newStms.write(System.out, "N3") ;
+	    // System.out.println("+++++++++++++++++++ to add +++++++++++++++++++++++");
+	    // newStms.write(System.out, "N3") ;
 	    // System.out.println("+++++++++++++++++++ to suppress +++++++++++++++++++++++");
 	    // suppressStms.write(System.out, "N3") ;
 	    // System.out.println("++++++++++++++++++++++++++++++++++++++++++");
@@ -169,6 +178,9 @@ public class Apply extends Step {
 	    	rml.remove(st);
 	    }
 	    // System.out.println("++++++++++++++++++++++++++++++++++++++++++");
+
+	    // Statement sts = getUniqueSt(newStms,ns,"cpt");
+		// newStms.remove(sts);
 
 	    rml.add(newStms);
       	rml.write(System.out, "N3") ;

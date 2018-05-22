@@ -24,9 +24,10 @@ public class Step {
 	private String base="";
 	static protected OntModel owlmodel = null;
 
-	public String ns_rr   = "http://www.w3.org/ns/r2rml#" ;
-	public String ns_rml   = "http://semweb.mmlab.be/ns/rml#" ;
-	public String ns_ql   = "http://semweb.mmlab.be/ns/ql#" ;
+	public String ns_rr		= "http://www.w3.org/ns/r2rml#" ;
+	public String ns_rml	= "http://semweb.mmlab.be/ns/rml#" ;
+	public String ns_ql		= "http://semweb.mmlab.be/ns/ql#" ;
+	public String ns 		= "http://github.com/edesmontils/RML-Closer#" ;
 
 	public Step() {}
 
