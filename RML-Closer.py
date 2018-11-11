@@ -1,7 +1,7 @@
 import rdflib
 from rdflib.namespace import RDF
 
-from rdflib import RDF, RDFS, Namespace
+from rdflib import RDF, RDFS, OWL, Namespace
 
 RR = Namespace("http://www.w3.org/ns/r2rml#")
 RML = Namespace("http://semweb.mmlab.be/ns/rml#")
@@ -17,8 +17,8 @@ class RMLCloser(object):
 		self.mappings = None
 		self.onto = rdflib.Graph()
 		self.rml = rdflib.Graph()
-		self.rules1 = set()
-		self.rules2 = set()
+		self.rules1 = set() # rules r(m,s,l)
+		self.rules2 = set() # rules r(m,s,l,pom,p)
 
 	def init(self):
 		self.mappings = dict()
@@ -108,6 +108,7 @@ class RDFSCloser(RMLCloser):
 	# Domains
 	#{ ?x ?pred ?y . ?pred rdfs:domain ?c . } 
 	#	=> { ?x a ?c . } .
+	# ===========================================================================================
 	# [
 	# (?m rr:predicateObjectMap ?s) (?s rr:predicate ?p) (?m rr:subjectMap ?s)
 	# (?p rdfs:domain ?d) noValue(?s rr:class ?d)
@@ -130,6 +131,7 @@ class RDFSCloser(RMLCloser):
 	# Ranges
 	#{ ?x ?pred ?y . ?pred rdfs:range ?c . } 
 	#	=> { ?y a ?c . } .
+	# ===========================================================================================
 	# [
 	# (?m rr:predicateObjectMap ?pom) (?po rr:predicate ?p) (?p rdfs:range ?d)
 	# (?pom rr:objectMap ?o) (?o rr:parentTriplesMap ?m2)
@@ -159,6 +161,160 @@ class OWLLiteCloser(RDFSCloser):
 	"""docstring for OWLLiteCloser"""
 	def __init__(self):
 		super(OWLLiteCloser, self).__init__()
+		self.rules1 += (self.sameAsClassRule, self.equivalentClassRule)
+		self.rules2 += (self.sameAsPropertyRule, self.equivalentPropertyRule)
+
+	# ===========================================================================================
+	# sameAs : 
+	#{ ?s a ?C . ?C owl:sameAs ?D . } => { ?s a ?D .} .
+	# ===========================================================================================
+	# [ 
+	# (?m rr:subjectMap ?s) (?s rr:class ?C) 
+	# (?C owl:sameAs ?D)  noValue(?s rr:class ?D)
+	# -> 
+	# (?s rr:class ?D)
+	# ]
+	def sameAsClassRule(self,m,s,lpom) :
+		change = False
+		for c in self.rml.objects(s,RR['class']) :
+			for d in self.onto.objects(c,OWL.sameAs) :
+				t = (s,RR['class'],d)
+				print("(sameAs Class) find: ",t)
+				if t not in self.rml :
+					print("added")
+					self.rml.add(  t  )
+					change = True		
+		return change
+
+	# ===========================================================================================
+	# equivalentClass
+	#{ ?x a ?class . ?class owl:equivalentClass ?equiv . } 
+	#	=> { ?x a ?equiv . } .
+	# ===========================================================================================
+	# [
+	# (?m rr:subjectMap ?s) (?s rr:class ?C) 
+	# (?C owl:equivalentClass ?D) noValue(?s rr:class ?D)
+	# -> 
+	# (?s rr:class ?D)
+	# ]
+	def equivalentClassRule(self,m,s,lpom) :
+		change = False
+		for c in self.rml.objects(s,RR['class']) :
+			for d in self.onto.objects(c,OWL.equivalentClass) :
+				t = (s,RR['class'],d)
+				print("(equivalentClass) find: ",t)
+				if t not in self.rml :
+					print("added")
+					self.rml.add(  t  )
+					change = True		
+		return change
+
+	# ===========================================================================================
+	# sameAs : { ?s ?p ?o . ?p owl:sameAs ?x . } => { ?s ?x ?o .} .
+	# ===========================================================================================
+	# [
+	# (?m rr:predicateObjectMap ?s) (?s rr:predicate ?p) 
+	# (?p owl:sameAs ?q)  noValue(?s rr:predicate ?q)
+	# -> 
+	# (?s rr:predicate ?q)
+	# ]
+	def sameAsPropertyRule(self,m,s,lpom, pom, p):
+		change = False
+		for q in self.onto.objects(p,OWL.sameAs) :
+			t = (pom,RR['predicate'],q)
+			print("(sameAs Property) find: ",t)
+			if t not in self.rml :
+				print("added")
+				self.rml.add(  t  )
+				change = True
+		return change
+
+	# ===========================================================================================
+	# equivalentProperty
+	#{ ?x ?pred ?y . ?pred owl:equivalentProperty ?equiv . } 
+	#	=> { ?x ?equiv ?y . } .
+	# ===========================================================================================
+	# [
+	# (?m rr:predicateObjectMap ?s) (?s rr:predicate ?p) 
+	# (?p owl:equivalentProperty ?q) noValue(?s rr:predicate ?q) 
+	# -> 
+	# (?s rr:predicate ?q)
+	# ]
+	def equivalentPropertyRule(self,m,s,lpom, pom, p):
+		change = False
+		for q in self.onto.objects(p,OWL.equivalentProperty) :
+			t = (pom,RR['predicate'],q)
+			print("(equivalent Property) find: ",t)
+			if t not in self.rml :
+				print("added")
+				self.rml.add(  t  )
+				change = True
+		return change
+
+	# ===========================================================================================
+	# Ranges
+	#{ ?x ?pred ?y . ?pred rdfs:range ?c . } 
+	#	=> { ?y a ?c . } .
+	#[ 
+	#(?m rr:predicateObjectMap ?po) (?po rr:predicate ?p) (?p rdfs:range ?C)
+	#(?m rml:logicalSource ?ls)
+	#(?po rr:objectMap ?o) (?o rr:template ?t) makeTemp(?m2) makeTemp(?x)
+	#-> 
+	#(?m2 rml:logicalSource ?ls)
+	#(?m2 rr:subjectMap ?x)
+	#(?x rr:class ?C)
+	#(?x rr:template ?t)
+	#]
+
+	# ===========================================================================================
+	# Gestion des caractéristiques des propriétés
+	# ===========================================================================================
+
+	# {?P owl:inverseOf ?Q. ?S ?P ?O} => {?O ?Q ?S}.
+	#
+	# Inverses.
+	#{ ?x owl:inverseOf ?y . } 
+	#	=> { ?x a owl:Property . ?y a owl:Property . } .
+	#{ ?x ?pred ?y . ?pred owl:inverseOf ?inverse . } 
+	#	=> { ?y ?inverse ?x . } .
+
+
+
+	# {?P a owl:SymmetricProperty. ?S ?P ?O} => {?O ?P ?S}.
+	#
+	# Symmetric properties
+	#{ ?pred a owl:SymmetricProperty . } 
+	#	=> { ?pred a owl:Property . } .
+	#{ ?pred a owl:SymmetricProperty . ?x ?pred ?y . } 
+	#	=> { ?y ?pred ?x .} .
+
+
+	# Transitive prop. : pas gérable à ce niveau ! 
+	# Devrait être fait lors de la construction de la requête interne (TP2Query) ou après...
+	# {?P a owl:TransitiveProperty. ?X ?P ?O. ?S ?P ?X} => {?S ?P ?O}.
+	#
+	# Transitive properties
+	#{ ?pred a owl:TransitiveProperty . } 
+	#	=> { ?pred a owl:Property . } .
+	#{ ?pred a owl:TransitiveProperty . ?x ?pred ?y . ?y ?pred ?z . } 
+	#	=> { ?x ?pred ?z .} .
+
+
+	# Functional Properties
+	#{ ?pred a owl:FunctionalProperty . } 
+	#	=> { ?pred a owl:Property . } .
+	#{ ?pred a owl:FunctionalProperty . ?x ?pred ?y . ?x ?pred ?z . } 
+	#	=> { ?y owl:sameAs ?z . } .
+
+	# Inverse Functional Properties
+	#{ ?pred a owl:InverseFunctionalProperty . } 
+	#	=> { ?pred a owl:Property . } .
+	#{ ?pred a owl:InverseFunctionalProperty . ?x ?pred ?y . ?z ?pred ?y . } 
+	#	=> { ?x owl:sameAs ?z . } .
+
+
+
+
 
 
 
@@ -167,8 +323,8 @@ class OWLLiteCloser(RDFSCloser):
 #==================================================
 if __name__ == "__main__":
 	print("main sweep")
-	cl = RDFSCloser()
-	cl.loadOnto("file:em-rdfs.n3")
+	cl = OWLLiteCloser()
+	cl.loadOnto("file:em-owl.n3")
 	cl.loadRML("file:EM2EM.rml")
 
 	cl.enrich()
