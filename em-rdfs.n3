@@ -144,8 +144,8 @@ em:où rdf:type rdf:Property ;
 
 em:cotoie rdf:type rdf:Property ; rdfs:subPropertyOf em:waterLink ;
           rdfs:label "Côtoie" ;          
-          rdfs:range em:EspaceMaritime ;          
-          rdfs:domain em:Pays .
+          rdfs:range em:Pays ;          
+          rdfs:domain em:EspaceMaritime .
 
 
 ###  http://desmontils.net/ns/sw/em#EstSource
@@ -161,3 +161,10 @@ em:seJette rdf:type rdf:Property ; rdfs:subPropertyOf em:waterLink ;
            rdfs:label "Se Jette" ;           
            rdfs:range em:EspaceMaritime ;           
            rdfs:domain em:Fleuve .
+
+###  http://desmontils.net/ns/sw/em#parcourt3
+
+em:parcourt3 rdf:type rdf:Property ;
+             rdfs:label "Est Source" ;             
+             rdfs:range em:Pays ;             
+             rdfs:domain em:Fleuve .
