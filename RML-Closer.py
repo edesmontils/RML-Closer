@@ -50,7 +50,13 @@ class RMLCloser(object):
 		self.onto.parse(fileName,format="n3")
 		print("Ontology graph has %s statements." % len(self.onto))
 
+	def setRML(self, r) :
+		assert instanceof(r,rdflib.Graph), "(setRML) r must be an rdflib.Graph"
+		self.rml = r
 
+	def setOnto(self, o) :
+		assert instanceof(o,rdflib.Graph), "(setOnto) o must be an rdflib.Graph"
+		self.onto = o
 
 #==================================================
 #==================================================
