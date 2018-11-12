@@ -44,11 +44,11 @@ class RMLCloser(object):
 
 	def loadRML(self,fileName) :
 		self.rml.parse(fileName,format="n3")
-		print("RML graph has %s statements." % len(self.rml))
+		# print("RML graph has %s statements." % len(self.rml))
 
 	def loadOnto(self,fileName) :
 		self.onto.parse(fileName,format="n3")
-		print("Ontology graph has %s statements." % len(self.onto))
+		# print("Ontology graph has %s statements." % len(self.onto))
 
 	def setRML(self, r) :
 		assert instanceof(r,rdflib.Graph), "(setRML) r must be an rdflib.Graph"
@@ -82,9 +82,9 @@ class RDFSCloser(RMLCloser):
 		for c in self.rml.objects(s,RR['class']) :
 			for d in self.onto.objects(c,RDFS.subClassOf) :
 				t = (s,RR['class'],d)
-				print("(subClass) find: ",t)
+				# print("(subClass) find: ",t)
 				if t not in self.rml :
-					print("added")
+					# print("added")
 					self.rml.add(  t  )
 					change = True		
 		return change
@@ -102,9 +102,9 @@ class RDFSCloser(RMLCloser):
 		change = False
 		for q in self.onto.objects(p,RDFS.subPropertyOf) :
 			t = (pom,RR['predicate'],q)
-			print("(subProperty) find: ",t)
+			# print("(subProperty) find: ",t)
 			if t not in self.rml :
-				print("added")
+				# print("added")
 				self.rml.add(  t  )
 				change = True
 		return change
@@ -126,9 +126,9 @@ class RDFSCloser(RMLCloser):
 
 		for d in self.onto.objects(p,RDFS.domain) :
 			t = (s,RR['class'],d)
-			print("(domain) find: ",t)
+			# print("(domain) find: ",t)
 			if t not in self.rml :
-				print("added")
+				# print("added")
 				self.rml.add(  t  )
 				change = True
 		return change
@@ -152,9 +152,9 @@ class RDFSCloser(RMLCloser):
 				for m2 in self.rml.objects(o,RR.parentTriplesMap) :
 					(s2,_) = self.mappings[m2]
 					t = (s2,RR['class'],d)
-					print("(range) find: ",t)
+					# print("(range) find: ",t)
 					if t not in self.rml :
-						print("added")
+						# print("added")
 						self.rml.add(  t  )
 						change = True
 		return change
@@ -185,9 +185,9 @@ class OWLLiteCloser(RDFSCloser):
 		for c in self.rml.objects(s,RR['class']) :
 			for d in self.onto.objects(c,OWL.sameAs) :
 				t = (s,RR['class'],d)
-				print("(sameAs Class) find: ",t)
+				# print("(sameAs Class) find: ",t)
 				if t not in self.rml :
-					print("added")
+					# print("added")
 					self.rml.add(  t  )
 					change = True		
 		return change
@@ -208,9 +208,9 @@ class OWLLiteCloser(RDFSCloser):
 		for c in self.rml.objects(s,RR['class']) :
 			for d in self.onto.objects(c,OWL.equivalentClass) :
 				t = (s,RR['class'],d)
-				print("(equivalentClass) find: ",t)
+				# print("(equivalentClass) find: ",t)
 				if t not in self.rml :
-					print("added")
+					# print("added")
 					self.rml.add(  t  )
 					change = True		
 		return change
@@ -228,9 +228,9 @@ class OWLLiteCloser(RDFSCloser):
 		change = False
 		for q in self.onto.objects(p,OWL.sameAs) :
 			t = (pom,RR['predicate'],q)
-			print("(sameAs Property) find: ",t)
+			# print("(sameAs Property) find: ",t)
 			if t not in self.rml :
-				print("added")
+				# print("added")
 				self.rml.add(  t  )
 				change = True
 		return change
@@ -250,9 +250,9 @@ class OWLLiteCloser(RDFSCloser):
 		change = False
 		for q in self.onto.objects(p,OWL.equivalentProperty) :
 			t = (pom,RR['predicate'],q)
-			print("(equivalent Property) find: ",t)
+			# print("(equivalent Property) find: ",t)
 			if t not in self.rml :
-				print("added")
+				# print("added")
 				self.rml.add(  t  )
 				change = True
 		return change
