@@ -1,0 +1,97 @@
+# This N3 rules file implements most of RDFS and some of the more useful bits of OWL.
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix dbp:  <http://dbpedia.org/resource/> .
+
+#### RDFS ####
+
+# subClassOf and subPropertyOf are transitive.
+{ ?x rdfs:subClassOf ?y . ?y rdfs:subClassOf ?z . } 
+	=> { ?x rdfs:subClassOf ?z . } .
+{ ?x rdfs:subPropertyOf ?y . ?y rdfs:subPropertyOf ?z . } 
+	=> { ?x rdfs:subPropertyOf ?z . } .
+
+# Implement subproperties and subclasses.
+rdfs:subClassOf rdfs:domain rdfs:Class ; 
+                rdfs:range rdfs:Class .
+rdfs:subPropertyOf rdfs:domain rdf:Property ; 
+                   rdfs:range rdf:Property .
+{ ?instance a ?x . ?x rdfs:subClassOf ?y . } 
+	=> { ?instance a ?y . } .
+{ ?instance ?x ?object . ?x rdfs:subPropertyOf ?y . } 
+	=> { ?instance ?y ?object . } .
+
+# Domains .
+{ ?x ?pred ?y . ?pred rdfs:domain ?c . } 
+	=> { ?x a ?c . } .
+
+# Ranges
+{ ?x ?pred ?y . ?pred rdfs:range ?c . } 
+	=> { ?y a ?c . } .
+
+#### OWL ####
+
+{ ?x a owl:Property . } => { ?x a rdf:Property . } .
+{ ?x a owl:ObjectProperty . } => { ?x a owl:Property . } .
+{ ?x a owl:DatatypeProperty . } => { ?x a owl:Property . } .
+{ ?x a owl:Class . } => { ?x a rdfs:Class . } .
+
+# equivalentProperty
+{ ?x owl:equivalentProperty ?y . } 
+	=> { ?x a owl:Property . ?y a owl:Property . } .
+{ ?pred owl:equivalentProperty ?equiv . } 
+	=> { ?equiv owl:equivalentProperty ?pred . } .
+{ ?x ?pred ?y . ?pred owl:equivalentProperty ?equiv . } 
+	=> { ?x ?equiv ?y . } .
+
+# equivalentClass
+{ ?x owl:equivalentClass ?y . } 
+	=> { ?x a owl:Class . ?y a owl:Class . } .
+{ ?class owl:equivalentClass ?equiv . } 
+	=> { ?equiv owl:equivalentClass ?class . } .
+{ ?x a ?class . ?class owl:equivalentClass ?equiv . } 
+	=> { ?x a ?equiv . } .
+
+# sameAs
+{ ?s ?p ?o . ?s owl:sameAs ?x . } => { ?x ?p ?o .} .
+{ ?s ?p ?o . ?p owl:sameAs ?x . } => { ?s ?x ?o .} .
+{ ?s ?p ?o . ?o owl:sameAs ?x . } => { ?s ?p ?x .} .
+
+# Different from.
+{ ?x owl:differentFrom ?x } => { ?x a dbp:Contradiction . } .
+
+# Disjoint with.
+{ ?x a ?c1, ?c2 . ?c1 owl:disjointWith ?c2 . } 
+	=> { ?x a dbp:Contradiction . } .
+
+# Inverses.
+{ ?x owl:inverseOf ?y . } 
+	=> { ?x a owl:Property . ?y a owl:Property . } .
+{ ?x ?pred ?y . ?pred owl:inverseOf ?inverse . } 
+	=> { ?y ?inverse ?x . } .
+
+# Functional Properties
+{ ?pred a owl:FunctionalProperty . } 
+	=> { ?pred a owl:Property . } .
+{ ?pred a owl:FunctionalProperty . ?x ?pred ?y . ?x ?pred ?z . } 
+	=> { ?y owl:sameAs ?z . } .
+
+# Inverse Functional Properties
+{ ?pred a owl:InverseFunctionalProperty . } 
+	=> { ?pred a owl:Property . } .
+{ ?pred a owl:InverseFunctionalProperty . ?x ?pred ?y . ?z ?pred ?y . } 
+	=> { ?x owl:sameAs ?z . } .
+
+# Transitive properties
+{ ?pred a owl:TransitiveProperty . } 
+	=> { ?pred a owl:Property . } .
+{ ?pred a owl:TransitiveProperty . ?x ?pred ?y . ?y ?pred ?z . } 
+	=> { ?x ?pred ?z .} .
+
+# Symmetric properties
+{ ?pred a owl:SymmetricProperty . } 
+	=> { ?pred a owl:Property . } .
+{ ?pred a owl:SymmetricProperty . ?x ?pred ?y . } 
+	=> { ?y ?pred ?x .} .

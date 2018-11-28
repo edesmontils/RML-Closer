@@ -1,0 +1,111 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+<> rdfs:comment "The OWL LD profile in N3 (draft)" .
+
+
+#   ======= Semantics of Equality (eq-*) =======
+#eq-ref
+{ ?s ?p ?o . } => { ?s owl:sameAs ?s . ?p owl:sameAs ?p . ?o owl:sameAs ?o .}
+#eq-sym 
+{ ?x owl:sameAs ?y . } => { ?y owl:sameAs ?x . }
+#eq-trans 
+{ ?x owl:sameAs ?y . ?y owl:sameAs ?z . } => { ?x owl:sameAs ?z . }
+#eq-rep-s 
+{ ?s owl:sameAs ?s0 . ?s ?p ?o . } => { ?s0 ?p ?o . }
+#eq-rep-p 
+{ ?p owl:sameAs ?p0 . ?s ?p ?o . } => { ?s ?p0 ?o . }
+#eq-rep-o 
+{ ?o owl:sameAs ?o0 . ?s ?p ?o . } => { ?s ?p ?o0 . }
+#eq-diff1 
+{ ?x owl:sameAs ?y ; owl:differentFrom ?y . } => { ?x a owl:Nothing . ?y a owl:Nothing . }
+
+#   ======= Semantics of Property Axioms (prp-*) =======
+#prp-ap
+{
+    owl:priorVersion a owl:AnnotationProperty .
+		owl:backwardCompatibleWith a owl:AnnotationProperty .
+		owl:incompatibleWith a owl:AnnotationProperty .
+		owl:deprecated a owl:AnnotationProperty .
+		owl:versionInfo a owl:AnnotationProperty .
+		rdfs:isDefinedBy a owl:AnnotationProperty .
+		rdfs:label a owl:AnnotationProperty .
+		rdfs:comment a owl:AnnotationProperty .
+		rdfs:seeAlso a owl:AnnotationProperty .  
+}
+# prp-dom 
+{ ?p rdfs:domain ?c . ?x ?p ?y . } => { ?x a ?c . }
+# prp-rng 
+{ ?p rdfs:range ?c . ?x ?p ?y . } => { ?y a ?c . }
+# prp-fp 
+{ ?p a owl:FunctionalProperty . ?x ?p ?y1 , ?y2 . } => { ?y1 owl:sameAs ?y2 . }
+# prp-ifp 
+{ ?p a owl:InverseFunctionalProperty . ?x1 ?p ?y . ?x2 ?p ?y . } => { ?x1 owl:sameAs ?x2 . }
+# prp-irp 
+{ ?p a owl:IrreflexiveProperty . ?x ?p ?x . } => { ?x a owl:Nothing . }
+# prp-symp
+{ ?p a owl:SymmetricProperty . ?x ?p ?y . } => { ?y ?p ?x . }
+# prp-asyp 
+{ ?p a owl:AsymmetricProperty ?x ?p ?y . ?y ?p ?x . } => { ?x a owl:Nothing . ?y a owl:Nothing . }
+# prp-trp 
+{ ?p a owl:TransitiveProperty . ?x ?p ?y . ?y ?p ?z . } => { ?x ?p ?z . }
+# prp-spo1
+{ ?p1 rdfs:subPropertyOf ?p2 . ?x ?p1 ?y . } => { ?x ?p2 ?y . }
+# prp-eqp1 
+{ ?p1 owl:equivalentProperty ?p2 . ?x ?p1 ?y . } => { ?x ?p2 ?y . }
+# prp-eqp2 
+{ ?p1 owl:equivalentProperty ?p2 . ?x ?p2 ?y . } => { ?x ?p1 ?y . }
+# prp-pdw 
+{ ?p1 owl:propertyDisjointWith ?p2 . ?x ?p1 ?y ; ?p2 ?y . } => { ?x a owl:Nothing . ?y a owl:Nothing . }
+# prp-inv1 
+{ ?p1 owl:inverseOf ?p2 . ?x ?p1 ?y . } => { ?y ?p2 ?x . }
+# prp-inv2 
+{ ?p1 owl:inverseOf ?p2 . ?x ?p2 ?y . } => { ?y ?p1 ?x . }
+
+#   ======= Semantics of Classes (cls-*) =======
+# cls-thing
+{ owl:Thing a owl:Class . }
+# cls-nothing
+{ owl:Nothing a owl:Class . }
+# cls-nothing2 
+# { ?x a owl:Nothing . } => { false }
+# cls-com 
+{ ?c1 owl:complementOf ?c2 . ?x a ?c1 , ?c2 . } => { ?x a owl:Nothing . }
+
+#   ======= Semantics of Classes Axioms (cax-*) =======
+# cax-sco 
+{ ?c1 rdfs:subClassOf ?c2 . ?x a ?c1 . } => { ?x a ?c2 . }
+# cax-eqc1 
+{ ?c1 owl:equivalentClass ?c2 . ?x a ?c1 . } => { ?x a ?c2 . }
+# cax-eqc2 
+{ ?c1 owl:equivalentClass ?c2 . ?x a ?c2 . } => { ?x a ?c1 . }
+# cax-dw 
+{ ?c1 owl:disjointWith ?c2 . ?x a ?c1 , ?c2 . } => { ?x a owl:Nothing . }
+
+#   ======= Semantics of Schema Vocabulary (scm-*) =======
+# scm-cls 
+{ ?c a owl:Class . } => { ?c rdfs:subClassOf ?c , owl:Thing ; owl:equivalentClass ?c . owl:Nothing rdfs:subClassOf ?c . }
+# scm-sco 
+{ ?c1 rdfs:subClassOf ?c2 . ?c2 rdfs:subClassOf ?c3 . } => { ?c1 rdfs:subClassOf ?c3 . }
+# scm-eqc1 
+{ ?c1 owl:equivalentClass ?c2 . } => { ?c1 rdfs:subClassOf ?c2 . ?c2 rdfs:subClassOf ?c1 . }
+# scm-eqc2 
+{ ?c1 rdfs:subClassOf ?c2 . ?c2 rdfs:subClassOf ?c1 . } => { ?c1 owl:equivalentClass ?c2 . }
+# scm-op 
+{ ?p a owl:ObjectProperty . } => { ?p rdfs:subPropertyOf ?p ; owl:equivalentProperty ?p . }
+# scm-dp 
+{ ?p a owl:DatatypeProperty . } => { ?p rdfs:subPropertyOf ?p ; owl:equivalentProperty ?p . }
+# scm-spo 
+{ ?p1 rdfs:subPropertyOf ?p2 . ?p2 rdfs:subPropertyOf ?p3 . } => { ?p1 rdfs:subPropertyOf ?p3 . }
+# scm-eqp1 
+{ ?p1 owl:equivalentProperty ?p2 . } => { ?p1 rdfs:subPropertyOf ?p2 . ?p2 rdfs:subPropertyOf ?p1 . }
+# scm-eqp2 
+{ ?p1 rdfs:subPropertyOf ?p2 . ?p2 rdfs:subPropertyOf ?p1 . } => { ?p1 owl:equivalentProperty ?p2 . }
+# scm-dom1 
+{ ?p rdfs:domain ?c1 . ?c1 rdfs:subClassOf ?c2 . } => { ?p rdfs:domain ?c2 . }
+# scm-dom2 
+{ ?p2 rdfs:domain ?c . ?p1 rdfs:subPropertyOf ?p2 . } => { ?p1 rdfs:domain ?c . }
+# scm-rng1 
+{ ?p rdfs:range ?c1 . ?c1 rdfs:subClassOf ?c2 . } => { ?p rdfs:range ?c2 . }
+# scm-rng2 
+{ ?p2 rdfs:range ?c . ?p1 rdfs:subPropertyOf ?p2 . } => { ?p1 rdfs:range ?c . }
