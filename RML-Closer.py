@@ -1,7 +1,7 @@
 import rdflib
 from rdflib.namespace import RDF
 
-from rdflib import RDF, RDFS, OWL, Namespace
+from rdflib import RDF, RDFS, OWL, Namespace, BNode
 
 RR = Namespace("http://www.w3.org/ns/r2rml#")
 RML = Namespace("http://semweb.mmlab.be/ns/rml#")
@@ -149,7 +149,9 @@ class RDFSCloser(RMLCloser):
 		change = False
 		for d in self.onto.objects(p,RDFS.range) :
 			for o in self.rml.objects(pom,RR.objectMap) :
-				for m2 in self.rml.objects(o,RR.parentTriplesMap) :
+				ptm = self.rml.objects(o,RR.parentTriplesMap)
+
+				for m2 in ptm :
 					(s2,_) = self.mappings[m2]
 					t = (s2,RR['class'],d)
 					# print("(range) find: ",t)
@@ -157,6 +159,10 @@ class RDFSCloser(RMLCloser):
 						# print("added")
 						self.rml.add(  t  )
 						change = True
+
+				if not change:
+					print("nnnnnnnnn")
+					nrule = BNode()
 		return change
 
 
@@ -258,21 +264,6 @@ class OWLLiteCloser(RDFSCloser):
 		return change
 
 	# ===========================================================================================
-	# Ranges
-	#{ ?x ?pred ?y . ?pred rdfs:range ?c . } 
-	#	=> { ?y a ?c . } .
-	#[ 
-	#(?m rr:predicateObjectMap ?po) (?po rr:predicate ?p) (?p rdfs:range ?C)
-	#(?m rml:logicalSource ?ls)
-	#(?po rr:objectMap ?o) (?o rr:template ?t) makeTemp(?m2) makeTemp(?x)
-	#-> 
-	#(?m2 rml:logicalSource ?ls)
-	#(?m2 rr:subjectMap ?x)
-	#(?x rr:class ?C)
-	#(?x rr:template ?t)
-	#]
-
-	# ===========================================================================================
 	# Gestion des caractéristiques des propriétés
 	# ===========================================================================================
 
@@ -319,19 +310,14 @@ class OWLLiteCloser(RDFSCloser):
 	#	=> { ?x owl:sameAs ?z . } .
 
 
-
-
-
-
-
 #==================================================
 #==================================================
 #==================================================
 if __name__ == "__main__":
 	print("main sweep")
 	cl = OWLLiteCloser()
-	cl.loadOnto("file:em-owl.n3")
-	cl.loadRML("file:EM2EM.rml")
+	cl.loadOnto("file:example/em-owl.n3")
+	cl.loadRML("file:example/EM2EM.rml")
 
 	cl.enrich()
 

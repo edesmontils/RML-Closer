@@ -1,0 +1,11 @@
+L’extension du mapping RML dépend de la catégorie de l’ontologie utilisée : RDFS, OWL Lite, OWL DL, etc. A chaque catégorie correspond des règles d’enrichissement différentes. Prenons RDFS par exemple. [W3C-RDFS] liste les règles d’enrichissement possibles. Par exemple la règle « rdfs9 » dans [W3C-RDFS] indique : si « cl1 rdfs:subClassOf cl2 . » et « i1 a cl1 » alors « i1 a cl2 ». Il est donc possible de les appliquer sur les règles RML en enrichissant le "subjectMap" des règles concernées.
+
+
+L’extension à partir des règles n’est possible que pour les règles s’appliquant aux concepts manipulés (RML). Celles sur les individus ne sont pas applicables puisque les individus ne sont pas matérialisés. Par exemple, on peut considérer la règle de transitivité sur les propriétés « prp-trp » dans [W3C-OWL-RL] : « ?p a owl:TransitiveProperty », avec « ?i1 ?p ?i2 . ?i2 ?p ?i3 . » alors « ?i1 ?p ?i3 ». En revanche, la propriété de symétrie nous permet d’enrichir les règles pour les classes concernées. Il suffit d'ajouter le "predicateObjectMap" qui convient dans l'autre règle (si elle ne l'a pas déjà). 
+
+
+
+En biblio ou en bas de page :
+- [W3C-RDFS] https://www.w3.org/TR/rdf11-mt/#rdfs-entailment
+- [W3C-OWL-LD] http://semanticweb.org/OWLLD/#Rules 
+- [W3C-OWL-RL] https://www.w3.org/TR/owl-profiles/#Reasoning_in_OWL_2_RL_and_RDF_Graphs_using_Rules 
