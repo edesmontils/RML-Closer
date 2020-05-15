@@ -1,7 +1,7 @@
 
 # RML-Closer projet 
 V. 0.1
-© P.Serrano-Alvarado, E. Desmontils, Université de Nantes, mai 2018
+© E. Desmontils, Université de Nantes, mai 2018
 
 ## Positionnement de l’environnement (Jena, Joda-time…)+ nécessite Ant
 ```bash
